@@ -1,5 +1,15 @@
+/* font based on english language */
+[lang="en"] {
+  font-family: 'noto sans','Open sans','Arial', sans-serif;
+}
+
+/* font based on tamil language */
+[lang="ta"] {
+  font-family: 'noto sans tamil','lohit tamil','Arial',sans-serif;
+}
+
 body {
-  font-family: 'Noto sans tamil','Arial', sans-serif;
+  /* font-family: 'Arial', sans-serif; */
   margin: 0;
   padding: 0;
   line-height: 1.6;
