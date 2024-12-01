@@ -1,11 +1,46 @@
+@font-face {
+  font-family: 'Noto Sans Tamil';
+  src: url('fonts/Noto_Sans_Tamil/NotoSansTamil-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans Tamil';
+  src: url('fonts/Noto_Sans_Tamil/NotoSansTamil-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('fonts/Noto_Sans/NotoSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
 /* font based on english language */
 [lang="en"] {
-  font-family: 'noto sans','Open sans','Arial', sans-serif;
+  font-family: 'Noto Sans','Open sans','Arial', sans-serif;
 }
 
 /* font based on tamil language */
 [lang="ta"] {
-  font-family: 'noto sans tamil','lohit tamil','Arial',sans-serif;
+  font-family: 'Noto Sans Tamil','lohit tamil','Arial',sans-serif;
 }
 
 body {
