@@ -1,4 +1,11 @@
+@font-face {
+    font-family: 'Noto Sans Tamil';
+    src: url('path-to-font/NotoSansTamil-Regular.ttf') format('truetype');
+}
+
 body {
+font-family: 'Noto Sans Tamil', sans-serif;
+
 /*
 background-color: #000028;
 color: #00e6e6;
