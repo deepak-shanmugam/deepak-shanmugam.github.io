@@ -29,6 +29,11 @@ text-decoration: underline;
 color: #ff8f8f;
 }
 
+.header {
+display: flex;
+justify-content: space-between;
+}
+
 .layout {
 max-width: 1024px;
 margin: 0 auto;
@@ -58,4 +63,19 @@ color: #e6e6e6;
 .image-card img {
 width: 256px;
 border-radius: 5px;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+th, td {
+border: 1px solid #e6e6e6;
+text-align: center;
+padding: 5px;
+}
+
+.bold {
+font-weight: bold;
 }
