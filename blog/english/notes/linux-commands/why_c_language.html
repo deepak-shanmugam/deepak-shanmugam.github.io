@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why C language</title>
+    <link rel="stylesheet" href="../../../style.css">
+  </head>
+  
+  <body>
+    <div class="layout">
+      
+      <div class="header">
+        <p><a href="/index.html">home</a> | <a href="/blog/blog_index.html">blog</a></p>
+      </div>
+      
+      <hr>
+      
+      <div class="content">
+        
+        <h2><font face="freesans, sans-serif">1.Linux Command Line</font></h2>
+        
+<p><font face="freesans, sans-serif">To learn the fundamentals of the
+command line, navigating files, directories, and more.</font></p>
+<p><font face="freesans, sans-serif">Source: <a href="https://labex.io/linuxjourney" name="linux journey">linuxjourney</a></font></p>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ echo Hello World</font></p>
+<p><font face="freesans, sans-serif">$ echo “Hello World”</font></p>
+<p><font face="freesans, sans-serif">$ echo $USER</font></p>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ pwd</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">Print Working Directory</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ cd</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">Change Directory</font></p></li>
+	<li><p><font face="freesans, sans-serif">Absolute path: starting
+	from root directory (starts with \)</font></p></li>
+	<li><p><font face="freesans, sans-serif">Relative path: relative to
+	current location</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cd .</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">current directory</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cd ..</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">parent directory</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cd ~</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">home directory</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cd -</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">previous directory</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ ls</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">List Directory</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ ls &lt;path&gt;</font></p>
+<p><font face="freesans, sans-serif">$ ls -a</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to view hidden files</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ ls -l</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to view detailed
+	information in long format</font></p></li>
+	<li><p><font face="freesans, sans-serif">the detailed information
+	are as follows: file permissions, no of links, owner name, owner
+	group, file size, time-stamp of last modification, file/directory
+	name</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ ls -r</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to view in reverse
+	alphabetical order</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ ls -la</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to combine to flags</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ touch &lt;file_names&gt;</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">primary purpose: to update
+	the access and modification file time-stamps of a file or
+	directories.</font></p></li>
+	<li><p><font face="freesans, sans-serif">If a file does not exist,
+	it will create the file</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ touch -r &lt;reference_file_name&gt;
+&lt;destination_file_name&gt;</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to set the destination
+	file’s time-stamp to match that of another reference file</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ touch -d “2026-04-12
+23:35:00” &lt;file_name&gt;</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to set a file’s
+	time-stamp to a specific date and time</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ file &lt;file_name&gt;</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to find out what kind of a
+	file a file is</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ cat &lt;file_name&gt;</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">basic use: to display the
+	content of a single file directly in your terminal</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cat &lt;file_1&gt; &lt;file_2&gt;</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">can combine, or concatenate
+	multiple files and display their combined output</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cat &gt; file_name</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to write text into a file
+	directly from your terminal. Note: This also create a file if not
+	exist</font></p></li>
+	<li><p><font face="freesans, sans-serif">use ctrl+d to save and exit
+	the text</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cat -n file_name</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">it will numbers all output
+	lines, starting from 1</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cat -b file_name</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">it will numbers only the
+	non-empty output lines</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ less &lt;file_path&gt;</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to view a text file in page
+	format</font></p></li>
+	<li><p><font face="freesans, sans-serif">Arrow keys and Page keys to
+	navigate</font></p></li>
+	<li><p><font face="freesans, sans-serif">g : to move directly to the
+	beginning of the text file</font></p></li>
+	<li><p><font face="freesans, sans-serif">SHIFT+g or G: to jump to
+	the end of the text file</font></p></li>
+	<li><p><font face="freesans, sans-serif">h : to display helpful
+	summary</font></p></li>
+	<li><p><font face="freesans, sans-serif">q : to exit</font></p></li>
+	<li><p><font face="freesans, sans-serif">/search_term : to search
+	forward for “search_term”</font></p></li>
+	<li><p><font face="freesans, sans-serif">?search_term : to search
+	backword for “search_term”</font></p></li>
+	<li><p><font face="freesans, sans-serif">n : to jumps to the next
+	occurrence of the search term</font></p></li>
+	<li><p><font face="freesans, sans-serif">N : to jumps to the
+	previous occurrence</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ history</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to see list of commands you
+	have used</font></p></li>
+	<li><p><font face="freesans, sans-serif">up arrow : to cycle
+	backward through your history</font></p></li>
+	<li><p><font face="freesans, sans-serif">!! : to execute the most
+	recent command again</font></p></li>
+	<li><p><font face="freesans, sans-serif">CTRL+r : to initiate
+	reverse search in history</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ history -c</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to clear command history
+	for your current session</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ history -w</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to save the current
+	session’s history to your history file</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ history -d &lt;offset&gt;</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">offset is the number shown
+	next to the command in ‘history’ output</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ clear</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to clear terminal screen</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ cp [source] [destination]</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to copy files and
+	directories</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cp &lt;file&gt;
+&lt;destination_path/new_file_name&gt;</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to copy a file and give it
+	a new name in destination</font></p></li>
+	<li><p><font face="freesans, sans-serif">* : matches any sequence of
+	characters</font></p></li>
+	<li><p><font face="freesans, sans-serif">? : matches any single
+	character</font></p></li>
+	<li><p><font face="freesans, sans-serif">[] : matches any one of the
+	characters enclosed in the brackets</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cp -r folder/
+/home/user/Documents</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to copy a directory and all
+	of its contents</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cp -i file
+/home/user/Documents</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">Note: by default cp will
+	overwrite a file at the destination if it has the same name.</font></p></li>
+	<li><p><font face="freesans, sans-serif">to prevent accidental data
+	loss, use the -i (interactive) flag, which prompts for confirmation
+	before overwriting</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cp -f file
+/home/user/Documents</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to force an overwrite
+	without any prompts</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ cp -p file /home/user/Backup</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">Note: when you copy a file,
+	its meta data, such as modification time and ownership, is typically
+	updated. </font>
+	</p></li>
+	<li><p><font face="freesans, sans-serif">to preserve these original
+	attributes, the flag -p is essential.</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ mv [source] [destination]</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to move files and
+	directories</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ mv old_file_name new_file_name</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to rename files and
+	directories</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ mv file1 file2 file3
+destination/</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to move multiple files at
+	once</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ mv -t /destination file1 file2
+file3</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to specify target directory
+	first and then the source files to move</font></p></li>
+	<li><p><font face="freesans, sans-serif">Note: mv directly moves all
+	subdirectories of a folder without any flags</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ mv -i source_file
+destination_directory</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">Note: by default mv will
+	overwrite if same file name is present in destination folder</font></p></li>
+	<li><p><font face="freesans, sans-serif">the flag -i (interactive)
+	will prompt you for confirmation before overwriting existing data</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ mv -b file1
+directory_with_file1</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">if you intend to overwrite
+	a file but want to keep the old version, this will create a backup
+	of the destination file and the backup is typically renamed with a
+	tilde (~) suffix</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ mv -v file1 file2
+/somedirectory</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">this option makes the
+	command to print out what it is doing, showing each file being moved
+	or renamed</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ mkdir directory1 directory2</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">make directory</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ mkdir -p dir1/dir2/folder</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to create a directory and
+	also its parent directories (if not exist), the flag -p is used</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ rm file1</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to remove or delete a files</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ rm -f file1</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to remove all specified
+	files without prompting even if they are write-protected</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ rm -r directory</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to remove recursively
+	delete the directory</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ rmdir directory</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to remove an empty
+	directory</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ find [path] [expression]</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to search or find files in
+	a path</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ find /home -name puppies.jpg</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to search for a file named
+	‘puppies.jpg’ within the /home directory and all its
+	subdirectories</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ find /home -type d -name
+MyFolder</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">we set the type d to search
+	for directory with a name of ‘MyFolder’</font></p></li>
+	<li><p><font face="freesans, sans-serif">to search for regular
+	files, you would use -type f</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ help echo</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to provide information
+	about other Bash built-in commands</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ find –help</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">for most other executable
+	programs that are not built into the shell</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ man [command]</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">man (manual) pages to
+	provide a detailed information of what a command does, its available
+	options (or flags) and how to use it</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ whatis [command]</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to display a concise,
+	one-line description of a command directly from its manual (man)
+	page.</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ alias ll=’ls -la’</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to define a custom name for
+	any command or sequence of commands</font></p></li>
+	<li><p><font face="freesans, sans-serif">it creates temporary alias
+	that lasts for your current terminal session</font></p></li>
+	<li><p><font face="freesans, sans-serif">to make a command alias
+	permanent, add it to your shell’s configuration file, that is
+	~/.bashrc</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ source ~/.bashrc</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">for the changes to take
+	effect after adding in ~/.bashrc, either close and reopen the
+	terminal or reload the configuration file using the above ‘source’
+	command</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ unalias ll</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to remove the alias from
+	your current session</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+<p><font face="freesans, sans-serif">$ exit</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to end a shell session</font></p></li>
+</ul>
+<p><font face="freesans, sans-serif">$ logout</font></p>
+<ul>
+	<li><p><font face="freesans, sans-serif">to terminate login shell</font></p></li>
+</ul>
+<p><br/>
+<br/>
+
+</p>
+        
+      </div>
+      
+      <hr>
+        
+      <div class="footer">
+        <p>© 2024 Deepak Shanmugam</p>
+        <p>2026-05-02</p>
+      </div>
+      
+    </div>
+  </body>
+</html>
